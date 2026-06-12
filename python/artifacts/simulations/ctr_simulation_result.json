@@ -1,0 +1,318 @@
+{
+  "rounds": 20000,
+  "segmented": true,
+  "baseline": {
+    "impressions": 20000,
+    "clicks": 1803,
+    "ctr": 0.09015
+  },
+  "thompson": {
+    "impressions": 20000,
+    "clicks": 2011,
+    "ctr": 0.10055
+  },
+  "uplift": {
+    "absolute": 0.010400000000000006,
+    "relative": 0.11536328341652809,
+    "relative_percent": 11.536328341652808,
+    "ctr_diff_95ci": [
+      0.004644426126440568,
+      0.016155573873559446
+    ]
+  },
+  "posterior": {
+    "high_intent": {
+      "control": {
+        "successes": 72,
+        "failures": 733,
+        "posterior_mean": 0.08944099378881988
+      },
+      "treatment_llm": {
+        "successes": 1585,
+        "failures": 11654,
+        "posterior_mean": 0.11972203338620742
+      }
+    },
+    "light_user": {
+      "control": {
+        "successes": 37,
+        "failures": 761,
+        "posterior_mean": 0.046365914786967416
+      },
+      "treatment_llm": {
+        "successes": 321,
+        "failures": 4845,
+        "posterior_mean": 0.062137049941927994
+      }
+    }
+  },
+  "segments": {
+    "high_intent": {
+      "baseline": {
+        "impressions": 14040,
+        "clicks": 1486,
+        "ctr": 0.10584045584045584
+      },
+      "thompson": {
+        "impressions": 14040,
+        "clicks": 1655,
+        "ctr": 0.11787749287749288
+      },
+      "uplift": {
+        "absolute": 0.01203703703703704,
+        "relative": 0.11372812920592197,
+        "relative_percent": 11.372812920592198
+      }
+    },
+    "light_user": {
+      "baseline": {
+        "impressions": 5960,
+        "clicks": 317,
+        "ctr": 0.05318791946308725
+      },
+      "thompson": {
+        "impressions": 5960,
+        "clicks": 356,
+        "ctr": 0.059731543624161075
+      },
+      "uplift": {
+        "absolute": 0.006543624161073826,
+        "relative": 0.12302839116719243,
+        "relative_percent": 12.302839116719243
+      }
+    }
+  },
+  "seed_count": 20,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "multi_seed": {
+    "mean_relative_uplift_percent": 12.476396283709244,
+    "std_relative_uplift_percent": 3.526524894386225,
+    "relative_uplift_percent_95ci": [
+      10.930828603623443,
+      14.021963963795045
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "baseline_ctr": 0.0929,
+      "thompson_ctr": 0.1037,
+      "relative_uplift_percent": 11.625403659849304,
+      "segment_uplift_percent": {
+        "high_intent": 14.182534471437947,
+        "light_user": 0.0
+      }
+    },
+    {
+      "seed": 1,
+      "baseline_ctr": 0.09,
+      "thompson_ctr": 0.1059,
+      "relative_uplift_percent": 17.666666666666664,
+      "segment_uplift_percent": {
+        "high_intent": 17.031146454605707,
+        "light_user": 20.962199312714773
+      }
+    },
+    {
+      "seed": 2,
+      "baseline_ctr": 0.09405,
+      "thompson_ctr": 0.10035,
+      "relative_uplift_percent": 6.698564593301436,
+      "segment_uplift_percent": {
+        "high_intent": 5.6651814131126725,
+        "light_user": 11.93548387096774
+      }
+    },
+    {
+      "seed": 3,
+      "baseline_ctr": 0.09365,
+      "thompson_ctr": 0.1077,
+      "relative_uplift_percent": 15.002669514148433,
+      "segment_uplift_percent": {
+        "high_intent": 14.785992217898844,
+        "light_user": 16.012084592145012
+      }
+    },
+    {
+      "seed": 4,
+      "baseline_ctr": 0.09135,
+      "thompson_ctr": 0.1032,
+      "relative_uplift_percent": 12.972085385878488,
+      "segment_uplift_percent": {
+        "high_intent": 10.474951203643457,
+        "light_user": 26.206896551724128
+      }
+    },
+    {
+      "seed": 5,
+      "baseline_ctr": 0.0938,
+      "thompson_ctr": 0.1049,
+      "relative_uplift_percent": 11.83368869936034,
+      "segment_uplift_percent": {
+        "light_user": 1.5151515151515182,
+        "high_intent": 14.036222509702458
+      }
+    },
+    {
+      "seed": 6,
+      "baseline_ctr": 0.09255,
+      "thompson_ctr": 0.10005,
+      "relative_uplift_percent": 8.103727714748791,
+      "segment_uplift_percent": {
+        "high_intent": 6.957087126137837,
+        "light_user": 13.73801916932908
+      }
+    },
+    {
+      "seed": 7,
+      "baseline_ctr": 0.0907,
+      "thompson_ctr": 0.1024,
+      "relative_uplift_percent": 12.899669239250278,
+      "segment_uplift_percent": {
+        "light_user": 17.434210526315784,
+        "high_intent": 11.986754966887421
+      }
+    },
+    {
+      "seed": 8,
+      "baseline_ctr": 0.09235,
+      "thompson_ctr": 0.1017,
+      "relative_uplift_percent": 10.124526258798047,
+      "segment_uplift_percent": {
+        "high_intent": 12.047399605003301,
+        "light_user": 1.21951219512195
+      }
+    },
+    {
+      "seed": 9,
+      "baseline_ctr": 0.0909,
+      "thompson_ctr": 0.102,
+      "relative_uplift_percent": 12.21122112211221,
+      "segment_uplift_percent": {
+        "high_intent": 12.60783012607829,
+        "light_user": 10.28938906752411
+      }
+    },
+    {
+      "seed": 10,
+      "baseline_ctr": 0.08735,
+      "thompson_ctr": 0.10475,
+      "relative_uplift_percent": 19.91986262163709,
+      "segment_uplift_percent": {
+        "high_intent": 17.946974847042835,
+        "light_user": 30.43478260869565
+      }
+    },
+    {
+      "seed": 11,
+      "baseline_ctr": 0.09055,
+      "thompson_ctr": 0.1038,
+      "relative_uplift_percent": 14.632799558255105,
+      "segment_uplift_percent": {
+        "high_intent": 12.888301387970916,
+        "light_user": 23.489932885906043
+      }
+    },
+    {
+      "seed": 12,
+      "baseline_ctr": 0.09145,
+      "thompson_ctr": 0.1013,
+      "relative_uplift_percent": 10.77091306724986,
+      "segment_uplift_percent": {
+        "light_user": 17.16171617161716,
+        "high_intent": 9.501965923984281
+      }
+    },
+    {
+      "seed": 13,
+      "baseline_ctr": 0.0907,
+      "thompson_ctr": 0.10125,
+      "relative_uplift_percent": 11.631753031973544,
+      "segment_uplift_percent": {
+        "high_intent": 10.866666666666664,
+        "light_user": 15.286624203821662
+      }
+    },
+    {
+      "seed": 14,
+      "baseline_ctr": 0.09235,
+      "thompson_ctr": 0.10765,
+      "relative_uplift_percent": 16.567406605305894,
+      "segment_uplift_percent": {
+        "high_intent": 16.688396349413296,
+        "light_user": 15.974440894568684
+      }
+    },
+    {
+      "seed": 15,
+      "baseline_ctr": 0.09295,
+      "thompson_ctr": 0.10525,
+      "relative_uplift_percent": 13.232920925228608,
+      "segment_uplift_percent": {
+        "light_user": 33.57664233576643,
+        "high_intent": 9.716088328075704
+      }
+    },
+    {
+      "seed": 16,
+      "baseline_ctr": 0.0931,
+      "thompson_ctr": 0.1006,
+      "relative_uplift_percent": 8.055853920515567,
+      "segment_uplift_percent": {
+        "high_intent": 6.507731958762884,
+        "light_user": 15.80645161290323
+      }
+    },
+    {
+      "seed": 17,
+      "baseline_ctr": 0.09075,
+      "thompson_ctr": 0.1049,
+      "relative_uplift_percent": 15.592286501377405,
+      "segment_uplift_percent": {
+        "high_intent": 17.099135063206923,
+        "light_user": 8.333333333333329
+      }
+    },
+    {
+      "seed": 18,
+      "baseline_ctr": 0.09385,
+      "thompson_ctr": 0.10625,
+      "relative_uplift_percent": 13.212573255194455,
+      "segment_uplift_percent": {
+        "high_intent": 11.827956989247319,
+        "light_user": 20.608108108108105
+      }
+    },
+    {
+      "seed": 19,
+      "baseline_ctr": 0.09375,
+      "thompson_ctr": 0.1001,
+      "relative_uplift_percent": 6.773333333333327,
+      "segment_uplift_percent": {
+        "high_intent": 7.229686500319893,
+        "light_user": 4.487179487179488
+      }
+    }
+  ]
+}

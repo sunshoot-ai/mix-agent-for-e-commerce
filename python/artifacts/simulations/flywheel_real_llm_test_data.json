@@ -1,0 +1,910 @@
+{
+  "generated_at": "2026-05-29T08:14:23.005866+00:00",
+  "user_id": "u_flywheel_001",
+  "llm_mode": "real",
+  "flow": [
+    "behavior_events",
+    "real_time_features",
+    "user_profile",
+    "recommendation_inventory_copy",
+    "feedback_events",
+    "ab_and_feature_update"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "request_id": "d084325f-507e-43e2-924f-982402c0fc27",
+      "experiment_group": "treatment_llm",
+      "total_latency_ms": 7517.345000000205,
+      "agent_summary": {
+        "user_profile": {
+          "success": true,
+          "latency_ms": 2734.8552999901585,
+          "confidence": 0.85,
+          "error": null
+        },
+        "product_rec": {
+          "success": true,
+          "latency_ms": 1112.7711000153795,
+          "confidence": 0.8,
+          "error": null
+        },
+        "marketing_copy": {
+          "success": true,
+          "latency_ms": 3667.5877000088803,
+          "confidence": 0.9,
+          "error": null
+        },
+        "inventory": {
+          "success": true,
+          "latency_ms": 1.2589999823831022,
+          "confidence": 0.95,
+          "error": null
+        }
+      },
+      "features_before": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 1,
+        "purchase_count_7d": 0,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "offline_tags": {}
+      },
+      "profile": {
+        "user_id": "u_flywheel_001",
+        "age": null,
+        "gender": null,
+        "city": null,
+        "segments": [
+          "new_user",
+          "churn_risk"
+        ],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "price_range": [
+          100.0,
+          2000.0
+        ],
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "rfm_score": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "real_time_tags": {
+          "活跃时段": "晚间",
+          "偏好风格": "数码科技"
+        }
+      },
+      "products": [
+        {
+          "product_id": "P003",
+          "name": "AirPods Pro 3",
+          "category": "耳机",
+          "price": 1899.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 1000,
+          "tags": [
+            "降噪",
+            "无线"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P004",
+          "name": "Sony WH-1000XM6",
+          "category": "耳机",
+          "price": 2499.0,
+          "description": "",
+          "brand": "Sony",
+          "seller_id": "S03",
+          "stock": 200,
+          "tags": [
+            "头戴",
+            "降噪"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P006",
+          "name": "小米平板7 Pro",
+          "category": "平板",
+          "price": 2499.0,
+          "description": "",
+          "brand": "小米",
+          "seller_id": "S04",
+          "stock": 600,
+          "tags": [
+            "性价比",
+            "娱乐"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        }
+      ],
+      "inventory": {
+        "available_products": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006",
+          "P007",
+          "P008",
+          "P009",
+          "P010"
+        ],
+        "low_stock_alerts": [
+          {
+            "product_id": "P009",
+            "name": "戴尔U2724D显示器",
+            "current_stock": 80,
+            "level": "warning",
+            "action": "plan_restock"
+          }
+        ],
+        "purchase_limits": {
+          "P002": 3
+        }
+      },
+      "marketing_copies": [
+        {
+          "product_id": "P003",
+          "copy": "欢迎新朋友！AirPods Pro 3新人专享¥1899，主动降噪+无线自由，首单立减惊喜等你开启～"
+        },
+        {
+          "product_id": "P004",
+          "copy": "欢迎加入！Sony WH-1000XM6头戴降噪旗舰，新人特惠¥2499，静享世界，轻松下单无压力～"
+        },
+        {
+          "product_id": "P006",
+          "copy": "新用户专属福利！小米平板7 Pro高能娱乐神器，性价比之王仅¥2499，首单即享优先发货～"
+        }
+      ],
+      "feedback_events": [
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "d084325f-507e-43e2-924f-982402c0fc27",
+            "product_id": "P003",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "耳机",
+              "price": 1899.0
+            },
+            "timestamp": "2026-05-29T16:14:15.504187"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "d084325f-507e-43e2-924f-982402c0fc27:u_flywheel_001:P003:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "d084325f-507e-43e2-924f-982402c0fc27",
+            "product_id": "P004",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "耳机",
+              "price": 2499.0
+            },
+            "timestamp": "2026-05-29T16:14:15.504187"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "d084325f-507e-43e2-924f-982402c0fc27:u_flywheel_001:P004:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "d084325f-507e-43e2-924f-982402c0fc27",
+            "product_id": "P006",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "平板",
+              "price": 2499.0
+            },
+            "timestamp": "2026-05-29T16:14:15.505190"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "d084325f-507e-43e2-924f-982402c0fc27:u_flywheel_001:P006:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "d084325f-507e-43e2-924f-982402c0fc27",
+            "product_id": "P003",
+            "event_type": "click",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "耳机",
+              "price": 1899.0
+            },
+            "timestamp": "2026-05-29T16:14:15.505190"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "d084325f-507e-43e2-924f-982402c0fc27:u_flywheel_001:P003:click"
+          }
+        }
+      ],
+      "features_after": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 2,
+        "purchase_count_7d": 0,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003",
+          "P004",
+          "P006",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "offline_tags": {}
+      }
+    },
+    {
+      "round": 2,
+      "request_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f",
+      "experiment_group": "treatment_llm",
+      "total_latency_ms": 7500.313399999868,
+      "agent_summary": {
+        "user_profile": {
+          "success": true,
+          "latency_ms": 2481.908100016881,
+          "confidence": 0.85,
+          "error": null
+        },
+        "product_rec": {
+          "success": true,
+          "latency_ms": 1106.6251000156626,
+          "confidence": 0.8,
+          "error": null
+        },
+        "marketing_copy": {
+          "success": true,
+          "latency_ms": 3909.5591999939643,
+          "confidence": 0.9,
+          "error": null
+        },
+        "inventory": {
+          "success": true,
+          "latency_ms": 0.9102000040002167,
+          "confidence": 0.95,
+          "error": null
+        }
+      },
+      "features_before": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 2,
+        "purchase_count_7d": 0,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003",
+          "P004",
+          "P006",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "offline_tags": {}
+      },
+      "profile": {
+        "user_id": "u_flywheel_001",
+        "age": null,
+        "gender": null,
+        "city": null,
+        "segments": [
+          "new_user",
+          "churn_risk"
+        ],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "price_range": [
+          100.0,
+          2000.0
+        ],
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003",
+          "P004",
+          "P006",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "rfm_score": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "real_time_tags": {
+          "活跃时段": "晚间",
+          "偏好风格": "数码科技"
+        }
+      },
+      "products": [
+        {
+          "product_id": "P003",
+          "name": "AirPods Pro 3",
+          "category": "耳机",
+          "price": 1899.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 1000,
+          "tags": [
+            "降噪",
+            "无线"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P004",
+          "name": "Sony WH-1000XM6",
+          "category": "耳机",
+          "price": 2499.0,
+          "description": "",
+          "brand": "Sony",
+          "seller_id": "S03",
+          "stock": 200,
+          "tags": [
+            "头戴",
+            "降噪"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P007",
+          "name": "Anker 140W充电器",
+          "category": "配件",
+          "price": 399.0,
+          "description": "",
+          "brand": "Anker",
+          "seller_id": "S05",
+          "stock": 2000,
+          "tags": [
+            "快充",
+            "便携"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        }
+      ],
+      "inventory": {
+        "available_products": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006",
+          "P007",
+          "P008",
+          "P009",
+          "P010"
+        ],
+        "low_stock_alerts": [
+          {
+            "product_id": "P009",
+            "name": "戴尔U2724D显示器",
+            "current_stock": 80,
+            "level": "warning",
+            "action": "plan_restock"
+          }
+        ],
+        "purchase_limits": {
+          "P002": 3
+        }
+      },
+      "marketing_copies": [
+        {
+          "product_id": "P003",
+          "copy": "欢迎新朋友！AirPods Pro 3新人专享¥1899，主动降噪+无线自由，首单立减惊喜等你开启～"
+        },
+        {
+          "product_id": "P004",
+          "copy": "新用户专属礼遇！Sony WH-1000XM6头戴降噪旗舰直降，¥2499带回家，静享纯净音质不犹豫～"
+        },
+        {
+          "product_id": "P007",
+          "copy": "新手必入快充神器！Anker 140W充电器仅¥399，小巧便携·一充多用，新人首单轻松省心购～"
+        }
+      ],
+      "feedback_events": [
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f",
+            "product_id": "P003",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "耳机",
+              "price": 1899.0
+            },
+            "timestamp": "2026-05-29T16:14:23.005866"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f:u_flywheel_001:P003:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f",
+            "product_id": "P004",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "耳机",
+              "price": 2499.0
+            },
+            "timestamp": "2026-05-29T16:14:23.005866"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f:u_flywheel_001:P004:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f",
+            "product_id": "P007",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "配件",
+              "price": 399.0
+            },
+            "timestamp": "2026-05-29T16:14:23.005866"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f:u_flywheel_001:P007:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f",
+            "product_id": "P003",
+            "event_type": "click",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "耳机",
+              "price": 1899.0
+            },
+            "timestamp": "2026-05-29T16:14:23.005866"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f:u_flywheel_001:P003:click"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f",
+            "product_id": "P004",
+            "event_type": "purchase",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "耳机",
+              "price": 2499.0,
+              "amount": 2499.0
+            },
+            "timestamp": "2026-05-29T16:14:23.005866"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "4f833d83-32fe-4fc8-972c-76c1660f1d6f:u_flywheel_001:P004:purchase"
+          }
+        }
+      ],
+      "features_after": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 3,
+        "purchase_count_7d": 1,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003",
+          "P004",
+          "P006",
+          "P003",
+          "P004",
+          "P007",
+          "P003",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [
+          "P004"
+        ],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 1.0,
+          "frequency": 0.1,
+          "monetary": 1.0
+        },
+        "offline_tags": {}
+      }
+    }
+  ],
+  "ab_experiments": {
+    "rec_strategy": {
+      "name": "推荐策略实验",
+      "groups": [
+        {
+          "name": "control",
+          "successes": 1,
+          "failures": 1,
+          "posterior_mean": 0.5
+        },
+        {
+          "name": "treatment_llm",
+          "successes": 4,
+          "failures": 1,
+          "posterior_mean": 0.8
+        }
+      ],
+      "stats": {
+        "treatment_llm": {
+          "click": {
+            "count": 2,
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "purchase": {
+            "count": 1,
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    "copy_style": {
+      "name": "文案风格实验",
+      "groups": [
+        {
+          "name": "formal",
+          "successes": 1,
+          "failures": 1,
+          "posterior_mean": 0.5
+        },
+        {
+          "name": "casual",
+          "successes": 1,
+          "failures": 1,
+          "posterior_mean": 0.5
+        }
+      ],
+      "stats": {}
+    }
+  },
+  "business_metrics": {
+    "impression": {
+      "count": 6
+    },
+    "click": {
+      "count": 2
+    },
+    "purchase": {
+      "count": 1
+    }
+  },
+  "observability": {
+    "workflow_requests_total": {
+      "counter": 4.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "scene": "homepage",
+        "status": "completed"
+      }
+    },
+    "agent_transition_total": {
+      "counter": 8.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "from_agent": "filter",
+        "to_agent": "marketing_copy"
+      }
+    },
+    "feature_fetch_total": {
+      "counter": 2.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "store": "feast",
+        "status": "success"
+      }
+    },
+    "span_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 48,
+      "avg": 1251.282250002987,
+      "p50": 0.16960001084953547,
+      "p95": 3909.80670999852,
+      "p99": 7509.391092002043,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "component": "workflow.supervisor.recommend",
+        "kind": "workflow"
+      }
+    },
+    "tool_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 22,
+      "avg": 0.021836365869438105,
+      "p50": 0.014299992471933365,
+      "p95": 0.04940003273077309,
+      "p99": 0.07966702745761722,
+      "labels": {
+        "tool": "inventory_stock_lookup",
+        "kind": "tool"
+      }
+    },
+    "agent_calls_total": {
+      "counter": 10.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "agent": "marketing_copy",
+        "status": "success",
+        "error_code": ""
+      }
+    },
+    "agent_result_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 10,
+      "avg": 1501.5832500066608,
+      "p50": 1109.698100015521,
+      "p95": 3800.6720250006765,
+      "p99": 3887.7817649953067,
+      "labels": {
+        "agent": "marketing_copy",
+        "status": "success"
+      }
+    },
+    "agent_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 10,
+      "avg": 1501.7522600013763,
+      "p50": 1109.948400000576,
+      "p95": 3800.8283299859613,
+      "p99": 3887.9219059832394,
+      "labels": {
+        "agent": "marketing_copy"
+      }
+    },
+    "llm_total_tokens_total": {
+      "counter": 3383.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "agent": "marketing_copy",
+        "model": "qwen-plus-2025-12-01"
+      }
+    },
+    "workflow_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 10,
+      "avg": 3003.3587700047065,
+      "p50": 2608.804500021506,
+      "p95": 7509.727220001514,
+      "p99": 7515.777523992001,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "component": "workflow.supervisor.recommend"
+      }
+    },
+    "tool_calls_total": {
+      "counter": 20.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "tool": "inventory_stock_lookup",
+        "status": "success"
+      }
+    },
+    "workflow_agent_results_total": {
+      "counter": 8.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "agent": "inventory",
+        "status": "success"
+      }
+    },
+    "workflow_total_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 2,
+      "avg": 7508.8292000000365,
+      "p50": 7508.8292000000365,
+      "p95": 7516.493420000188,
+      "p99": 7517.1746840002015,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "scene": "homepage",
+        "experiment_group": "treatment_llm"
+      }
+    },
+    "business_events_total": {
+      "counter": 9.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "event_type": "purchase",
+        "scene": "homepage",
+        "experiment_group": "treatment_llm"
+      }
+    },
+    "feedback_events_total": {
+      "counter": 9.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "event_type": "purchase",
+        "status": "recorded"
+      }
+    }
+  }
+}

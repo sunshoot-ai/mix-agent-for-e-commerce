@@ -1,0 +1,165 @@
+{
+  "source": "feast_online_features",
+  "rounds": 100000,
+  "segmented": true,
+  "user_count": 1000,
+  "baseline": {
+    "impressions": 100000,
+    "clicks": 11850,
+    "ctr": 0.1185
+  },
+  "thompson": {
+    "impressions": 100000,
+    "clicks": 13636,
+    "ctr": 0.13636
+  },
+  "uplift": {
+    "absolute": 0.017860000000000015,
+    "relative": 0.1507172995780592,
+    "relative_percent": 15.071729957805921,
+    "ctr_diff_95ci": [
+      0.014938194791816828,
+      0.0207818052081832
+    ]
+  },
+  "posterior": {
+    "active_viewer": {
+      "control": {
+        "successes": 49,
+        "failures": 497,
+        "posterior_mean": 0.08974358974358974
+      },
+      "treatment_llm": {
+        "successes": 13548,
+        "failures": 85418,
+        "posterior_mean": 0.13689549946446256
+      }
+    },
+    "high_value": {
+      "control": {
+        "successes": 4,
+        "failures": 61,
+        "posterior_mean": 0.06153846153846154
+      },
+      "treatment_llm": {
+        "successes": 38,
+        "failures": 296,
+        "posterior_mean": 0.11377245508982035
+      }
+    },
+    "standard": {
+      "control": {
+        "successes": 1,
+        "failures": 51,
+        "posterior_mean": 0.019230769230769232
+      },
+      "treatment_llm": {
+        "successes": 2,
+        "failures": 47,
+        "posterior_mean": 0.04081632653061224
+      }
+    }
+  },
+  "segments": {
+    "active_viewer": {
+      "baseline": {
+        "impressions": 99508,
+        "clicks": 11804,
+        "ctr": 0.1186236282509949
+      },
+      "thompson": {
+        "impressions": 99508,
+        "clicks": 13595,
+        "ctr": 0.13662218113116534
+      },
+      "uplift": {
+        "absolute": 0.017998552880170438,
+        "relative": 0.15172822771941713,
+        "relative_percent": 15.172822771941712
+      }
+    },
+    "high_value": {
+      "baseline": {
+        "impressions": 395,
+        "clicks": 45,
+        "ctr": 0.11392405063291139
+      },
+      "thompson": {
+        "impressions": 395,
+        "clicks": 40,
+        "ctr": 0.10126582278481013
+      },
+      "uplift": {
+        "absolute": -0.012658227848101264,
+        "relative": -0.11111111111111109,
+        "relative_percent": -11.111111111111109
+      }
+    },
+    "standard": {
+      "baseline": {
+        "impressions": 97,
+        "clicks": 1,
+        "ctr": 0.010309278350515464
+      },
+      "thompson": {
+        "impressions": 97,
+        "clicks": 1,
+        "ctr": 0.010309278350515464
+      },
+      "uplift": {
+        "absolute": 0.0,
+        "relative": 0.0,
+        "relative_percent": 0.0
+      }
+    }
+  },
+  "seed_count": 3,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "multi_seed": {
+    "mean_relative_uplift_percent": 15.091588067741627,
+    "std_relative_uplift_percent": 0.5734794985772665,
+    "relative_uplift_percent_95ci": [
+      14.442634923700126,
+      15.740541211783128
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "baseline_ctr": 0.11925,
+      "thompson_ctr": 0.13767,
+      "relative_uplift_percent": 15.446540880503138,
+      "segment_uplift_percent": {
+        "active_viewer": 15.5231921878946,
+        "high_value": 0.0,
+        "standard": -66.66666666666666
+      }
+    },
+    {
+      "seed": 1,
+      "baseline_ctr": 0.11852,
+      "thompson_ctr": 0.13677,
+      "relative_uplift_percent": 15.398245021937226,
+      "segment_uplift_percent": {
+        "active_viewer": 15.563839701770723,
+        "standard": 33.33333333333335,
+        "high_value": -28.26086956521739
+      }
+    },
+    {
+      "seed": 2,
+      "baseline_ctr": 0.11982,
+      "thompson_ctr": 0.13711,
+      "relative_uplift_percent": 14.429978300784521,
+      "segment_uplift_percent": {
+        "active_viewer": 14.465092918131587,
+        "high_value": -5.555555555555562,
+        "standard": 0.0
+      }
+    }
+  ]
+}

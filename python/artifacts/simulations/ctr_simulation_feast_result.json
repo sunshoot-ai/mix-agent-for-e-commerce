@@ -1,0 +1,36 @@
+{
+  "source": "feast_online_features",
+  "rounds": 20000,
+  "user_count": 1000,
+  "baseline": {
+    "impressions": 20000,
+    "clicks": 2543,
+    "ctr": 0.12715
+  },
+  "thompson": {
+    "impressions": 20000,
+    "clicks": 2573,
+    "ctr": 0.12865
+  },
+  "uplift": {
+    "absolute": 0.0014999999999999736,
+    "relative": 0.011797090051120514,
+    "relative_percent": 1.1797090051120513,
+    "ctr_diff_95ci": [
+      -0.00504596067238418,
+      0.008045960672384127
+    ]
+  },
+  "posterior": {
+    "control": {
+      "successes": 541,
+      "failures": 3890,
+      "posterior_mean": 0.12209433536447754
+    },
+    "treatment_llm": {
+      "successes": 2034,
+      "failures": 13539,
+      "posterior_mean": 0.13061067231747256
+    }
+  }
+}

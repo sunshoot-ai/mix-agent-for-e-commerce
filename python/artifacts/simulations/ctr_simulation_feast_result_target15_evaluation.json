@@ -1,0 +1,159 @@
+{
+  "suite_name": "ctr_simulation",
+  "case_name": "feast_ctr_simulation",
+  "passed": true,
+  "metrics": [
+    {
+      "name": "simulation_rounds",
+      "value": 100000.0,
+      "passed": true,
+      "threshold": 100000,
+      "details": {}
+    },
+    {
+      "name": "baseline_ctr",
+      "value": 0.1185,
+      "passed": true,
+      "threshold": null,
+      "details": {}
+    },
+    {
+      "name": "thompson_ctr",
+      "value": 0.13636,
+      "passed": true,
+      "threshold": null,
+      "details": {}
+    },
+    {
+      "name": "relative_uplift_percent",
+      "value": 15.071729957805921,
+      "passed": true,
+      "threshold": 15.0,
+      "details": {}
+    },
+    {
+      "name": "ctr_diff_ci_low",
+      "value": 0.014938194791816828,
+      "passed": true,
+      "threshold": null,
+      "details": {}
+    },
+    {
+      "name": "seed_count",
+      "value": 3.0,
+      "passed": true,
+      "threshold": 2.0,
+      "details": {}
+    },
+    {
+      "name": "mean_relative_uplift_percent",
+      "value": 15.091588067741627,
+      "passed": true,
+      "threshold": 15.0,
+      "details": {}
+    }
+  ],
+  "failures": [],
+  "metadata": {
+    "posterior": {
+      "active_viewer": {
+        "control": {
+          "successes": 49,
+          "failures": 497,
+          "posterior_mean": 0.08974358974358974
+        },
+        "treatment_llm": {
+          "successes": 13548,
+          "failures": 85418,
+          "posterior_mean": 0.13689549946446256
+        }
+      },
+      "high_value": {
+        "control": {
+          "successes": 4,
+          "failures": 61,
+          "posterior_mean": 0.06153846153846154
+        },
+        "treatment_llm": {
+          "successes": 38,
+          "failures": 296,
+          "posterior_mean": 0.11377245508982035
+        }
+      },
+      "standard": {
+        "control": {
+          "successes": 1,
+          "failures": 51,
+          "posterior_mean": 0.019230769230769232
+        },
+        "treatment_llm": {
+          "successes": 2,
+          "failures": 47,
+          "posterior_mean": 0.04081632653061224
+        }
+      }
+    },
+    "source": "feast_online_features",
+    "multi_seed": {
+      "mean_relative_uplift_percent": 15.091588067741627,
+      "std_relative_uplift_percent": 0.5734794985772665,
+      "relative_uplift_percent_95ci": [
+        14.442634923700126,
+        15.740541211783128
+      ]
+    },
+    "segments": {
+      "active_viewer": {
+        "baseline": {
+          "impressions": 99508,
+          "clicks": 11804,
+          "ctr": 0.1186236282509949
+        },
+        "thompson": {
+          "impressions": 99508,
+          "clicks": 13595,
+          "ctr": 0.13662218113116534
+        },
+        "uplift": {
+          "absolute": 0.017998552880170438,
+          "relative": 0.15172822771941713,
+          "relative_percent": 15.172822771941712
+        }
+      },
+      "high_value": {
+        "baseline": {
+          "impressions": 395,
+          "clicks": 45,
+          "ctr": 0.11392405063291139
+        },
+        "thompson": {
+          "impressions": 395,
+          "clicks": 40,
+          "ctr": 0.10126582278481013
+        },
+        "uplift": {
+          "absolute": -0.012658227848101264,
+          "relative": -0.11111111111111109,
+          "relative_percent": -11.111111111111109
+        }
+      },
+      "standard": {
+        "baseline": {
+          "impressions": 97,
+          "clicks": 1,
+          "ctr": 0.010309278350515464
+        },
+        "thompson": {
+          "impressions": 97,
+          "clicks": 1,
+          "ctr": 0.010309278350515464
+        },
+        "uplift": {
+          "absolute": 0.0,
+          "relative": 0.0,
+          "relative_percent": 0.0
+        }
+      }
+    }
+  }
+}

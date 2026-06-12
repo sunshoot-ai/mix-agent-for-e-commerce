@@ -1,0 +1,933 @@
+{
+  "generated_at": "2026-05-29T08:08:56.299193+00:00",
+  "user_id": "u_flywheel_001",
+  "flow": [
+    "behavior_events",
+    "real_time_features",
+    "user_profile",
+    "recommendation_inventory_copy",
+    "feedback_events",
+    "ab_and_feature_update"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "request_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e",
+      "experiment_group": "treatment_llm",
+      "features_before": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 1,
+        "purchase_count_7d": 0,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "offline_tags": {}
+      },
+      "profile": {
+        "user_id": "u_flywheel_001",
+        "age": null,
+        "gender": null,
+        "city": null,
+        "segments": [
+          "active"
+        ],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "price_range": [
+          0.0,
+          9000.0
+        ],
+        "recent_views": [
+          "P001",
+          "P003",
+          "P003"
+        ],
+        "recent_purchases": [],
+        "rfm_score": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "real_time_tags": {
+          "活跃时段": "evening",
+          "偏好风格": "digital"
+        }
+      },
+      "products": [
+        {
+          "product_id": "P001",
+          "name": "iPhone 16 Pro",
+          "category": "手机",
+          "price": 7999.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 500,
+          "tags": [
+            "旗舰",
+            "新品"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P002",
+          "name": "华为 Mate 70",
+          "category": "手机",
+          "price": 5999.0,
+          "description": "",
+          "brand": "华为",
+          "seller_id": "S02",
+          "stock": 300,
+          "tags": [
+            "旗舰",
+            "国产"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P003",
+          "name": "AirPods Pro 3",
+          "category": "耳机",
+          "price": 1899.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 1000,
+          "tags": [
+            "降噪",
+            "无线"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P004",
+          "name": "Sony WH-1000XM6",
+          "category": "耳机",
+          "price": 2499.0,
+          "description": "",
+          "brand": "Sony",
+          "seller_id": "S03",
+          "stock": 200,
+          "tags": [
+            "头戴",
+            "降噪"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P005",
+          "name": "iPad Air M3",
+          "category": "平板",
+          "price": 4799.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 400,
+          "tags": [
+            "学习",
+            "办公"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        }
+      ],
+      "inventory": {
+        "available_products": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006",
+          "P007",
+          "P008",
+          "P009",
+          "P010"
+        ],
+        "low_stock_alerts": [
+          {
+            "product_id": "P009",
+            "name": "戴尔U2724D显示器",
+            "current_stock": 80,
+            "level": "warning",
+            "action": "plan_restock"
+          }
+        ],
+        "purchase_limits": {
+          "P002": 3
+        }
+      },
+      "marketing_copies": [
+        {
+          "product_id": "P001",
+          "copy": "iPhone 16 Pro贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P002",
+          "copy": "华为 Mate 70贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P003",
+          "copy": "AirPods Pro 3贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P004",
+          "copy": "Sony WH-1000XM6贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P005",
+          "copy": "iPad Air M3贴合你的近期偏好，适合现在加入购物清单。"
+        }
+      ],
+      "feedback_events": [
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e",
+            "product_id": "P001",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "手机",
+              "price": 7999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.289192"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e:u_flywheel_001:P001:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e",
+            "product_id": "P002",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "手机",
+              "price": 5999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.290375"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e:u_flywheel_001:P002:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e",
+            "product_id": "P003",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "耳机",
+              "price": 1899.0
+            },
+            "timestamp": "2026-05-29T16:08:56.290375"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e:u_flywheel_001:P003:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e",
+            "product_id": "P001",
+            "event_type": "click",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 1,
+              "category": "手机",
+              "price": 7999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.290375"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "42d306b1-f294-4ed4-a9ef-05c5e3e1cf5e:u_flywheel_001:P001:click"
+          }
+        }
+      ],
+      "features_after": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 2,
+        "purchase_count_7d": 0,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P001",
+          "P002",
+          "P003",
+          "P003",
+          "P001"
+        ],
+        "recent_purchases": [],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "offline_tags": {}
+      }
+    },
+    {
+      "round": 2,
+      "request_id": "96fc7988-281d-4b58-8099-3a7f2ab02666",
+      "experiment_group": "treatment_llm",
+      "features_before": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 2,
+        "purchase_count_7d": 0,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P001",
+          "P002",
+          "P003",
+          "P003",
+          "P001"
+        ],
+        "recent_purchases": [],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "rfm": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "offline_tags": {}
+      },
+      "profile": {
+        "user_id": "u_flywheel_001",
+        "age": null,
+        "gender": null,
+        "city": null,
+        "segments": [
+          "active"
+        ],
+        "preferred_categories": [
+          "耳机",
+          "手机"
+        ],
+        "price_range": [
+          0.0,
+          9000.0
+        ],
+        "recent_views": [
+          "P001",
+          "P003",
+          "P001",
+          "P002",
+          "P003",
+          "P003",
+          "P001"
+        ],
+        "recent_purchases": [],
+        "rfm_score": {
+          "recency": 0.0,
+          "frequency": 0.0,
+          "monetary": 0.0
+        },
+        "real_time_tags": {
+          "活跃时段": "evening",
+          "偏好风格": "digital"
+        }
+      },
+      "products": [
+        {
+          "product_id": "P001",
+          "name": "iPhone 16 Pro",
+          "category": "手机",
+          "price": 7999.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 500,
+          "tags": [
+            "旗舰",
+            "新品"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P002",
+          "name": "华为 Mate 70",
+          "category": "手机",
+          "price": 5999.0,
+          "description": "",
+          "brand": "华为",
+          "seller_id": "S02",
+          "stock": 300,
+          "tags": [
+            "旗舰",
+            "国产"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P003",
+          "name": "AirPods Pro 3",
+          "category": "耳机",
+          "price": 1899.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 1000,
+          "tags": [
+            "降噪",
+            "无线"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P004",
+          "name": "Sony WH-1000XM6",
+          "category": "耳机",
+          "price": 2499.0,
+          "description": "",
+          "brand": "Sony",
+          "seller_id": "S03",
+          "stock": 200,
+          "tags": [
+            "头戴",
+            "降噪"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        },
+        {
+          "product_id": "P005",
+          "name": "iPad Air M3",
+          "category": "平板",
+          "price": 4799.0,
+          "description": "",
+          "brand": "Apple",
+          "seller_id": "S01",
+          "stock": 400,
+          "tags": [
+            "学习",
+            "办公"
+          ],
+          "score": 0.0,
+          "image_url": ""
+        }
+      ],
+      "inventory": {
+        "available_products": [
+          "P001",
+          "P002",
+          "P003",
+          "P004",
+          "P005",
+          "P006",
+          "P007",
+          "P008",
+          "P009",
+          "P010"
+        ],
+        "low_stock_alerts": [
+          {
+            "product_id": "P009",
+            "name": "戴尔U2724D显示器",
+            "current_stock": 80,
+            "level": "warning",
+            "action": "plan_restock"
+          }
+        ],
+        "purchase_limits": {
+          "P002": 3
+        }
+      },
+      "marketing_copies": [
+        {
+          "product_id": "P001",
+          "copy": "iPhone 16 Pro贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P002",
+          "copy": "华为 Mate 70贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P003",
+          "copy": "AirPods Pro 3贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P004",
+          "copy": "Sony WH-1000XM6贴合你的近期偏好，适合现在加入购物清单。"
+        },
+        {
+          "product_id": "P005",
+          "copy": "iPad Air M3贴合你的近期偏好，适合现在加入购物清单。"
+        }
+      ],
+      "feedback_events": [
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "96fc7988-281d-4b58-8099-3a7f2ab02666",
+            "product_id": "P001",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "手机",
+              "price": 7999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.298194"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "96fc7988-281d-4b58-8099-3a7f2ab02666:u_flywheel_001:P001:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "96fc7988-281d-4b58-8099-3a7f2ab02666",
+            "product_id": "P002",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "手机",
+              "price": 5999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.298194"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "96fc7988-281d-4b58-8099-3a7f2ab02666:u_flywheel_001:P002:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "96fc7988-281d-4b58-8099-3a7f2ab02666",
+            "product_id": "P003",
+            "event_type": "impression",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "耳机",
+              "price": 1899.0
+            },
+            "timestamp": "2026-05-29T16:08:56.298194"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "96fc7988-281d-4b58-8099-3a7f2ab02666:u_flywheel_001:P003:impression"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "96fc7988-281d-4b58-8099-3a7f2ab02666",
+            "product_id": "P001",
+            "event_type": "click",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "手机",
+              "price": 7999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.299193"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "96fc7988-281d-4b58-8099-3a7f2ab02666:u_flywheel_001:P001:click"
+          }
+        },
+        {
+          "event": {
+            "user_id": "u_flywheel_001",
+            "request_id": "96fc7988-281d-4b58-8099-3a7f2ab02666",
+            "product_id": "P002",
+            "event_type": "purchase",
+            "scene": "homepage",
+            "experiment_id": "rec_strategy",
+            "experiment_group": "treatment_llm",
+            "metadata": {
+              "round": 2,
+              "category": "手机",
+              "price": 5999.0,
+              "amount": 5999.0
+            },
+            "timestamp": "2026-05-29T16:08:56.299193"
+          },
+          "result": {
+            "status": "recorded",
+            "duplicate": false,
+            "event_id": "96fc7988-281d-4b58-8099-3a7f2ab02666:u_flywheel_001:P002:purchase"
+          }
+        }
+      ],
+      "features_after": {
+        "user_id": "u_flywheel_001",
+        "view_count_1h": 2,
+        "view_count_24h": 2,
+        "click_count_1h": 3,
+        "purchase_count_7d": 1,
+        "recent_views": [
+          "P001",
+          "P003",
+          "P001",
+          "P002",
+          "P003",
+          "P001",
+          "P002",
+          "P003",
+          "P003",
+          "P001",
+          "P001"
+        ],
+        "recent_purchases": [
+          "P002"
+        ],
+        "preferred_categories": [
+          "手机",
+          "耳机"
+        ],
+        "rfm": {
+          "recency": 1.0,
+          "frequency": 0.1,
+          "monetary": 1.0
+        },
+        "offline_tags": {}
+      }
+    }
+  ],
+  "ab_experiments": {
+    "rec_strategy": {
+      "name": "推荐策略实验",
+      "groups": [
+        {
+          "name": "control",
+          "successes": 1,
+          "failures": 1,
+          "posterior_mean": 0.5
+        },
+        {
+          "name": "treatment_llm",
+          "successes": 4,
+          "failures": 1,
+          "posterior_mean": 0.8
+        }
+      ],
+      "stats": {
+        "treatment_llm": {
+          "click": {
+            "count": 2,
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "purchase": {
+            "count": 1,
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    "copy_style": {
+      "name": "文案风格实验",
+      "groups": [
+        {
+          "name": "formal",
+          "successes": 1,
+          "failures": 1,
+          "posterior_mean": 0.5
+        },
+        {
+          "name": "casual",
+          "successes": 1,
+          "failures": 1,
+          "posterior_mean": 0.5
+        }
+      ],
+      "stats": {}
+    }
+  },
+  "business_metrics": {
+    "impression": {
+      "count": 6
+    },
+    "click": {
+      "count": 2
+    },
+    "purchase": {
+      "count": 1
+    }
+  },
+  "observability": {
+    "workflow_requests_total": {
+      "counter": 4.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "scene": "homepage",
+        "status": "completed"
+      }
+    },
+    "agent_transition_total": {
+      "counter": 8.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "from_agent": "filter",
+        "to_agent": "marketing_copy"
+      }
+    },
+    "feature_fetch_total": {
+      "counter": 2.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "store": "feast",
+        "status": "success"
+      }
+    },
+    "span_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 48,
+      "avg": 0.8885041643225122,
+      "p50": 0.11520000407472253,
+      "p95": 4.1267350112320855,
+      "p99": 7.5574259960558265,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "component": "workflow.supervisor.recommend",
+        "kind": "workflow"
+      }
+    },
+    "tool_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 22,
+      "avg": 0.028068178587339142,
+      "p50": 0.0195500033441931,
+      "p95": 0.06446997285820544,
+      "p99": 0.11356897302903235,
+      "labels": {
+        "tool": "inventory_stock_lookup",
+        "kind": "tool"
+      }
+    },
+    "llm_total_tokens_total": {
+      "counter": 376.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "agent": "marketing_copy",
+        "model": "qwen-plus-2025-12-01"
+      }
+    },
+    "agent_calls_total": {
+      "counter": 10.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "agent": "marketing_copy",
+        "status": "success",
+        "error_code": ""
+      }
+    },
+    "agent_result_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 10,
+      "avg": 0.9781099914107472,
+      "p50": 0.5929000035393983,
+      "p95": 2.8486149647505954,
+      "p99": 3.1637229543412104,
+      "labels": {
+        "agent": "marketing_copy",
+        "status": "success"
+      }
+    },
+    "agent_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 10,
+      "avg": 1.1447500030044466,
+      "p50": 0.7685000309720635,
+      "p95": 3.0146650213282555,
+      "p99": 3.289093015482649,
+      "labels": {
+        "agent": "marketing_copy"
+      }
+    },
+    "workflow_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 10,
+      "avg": 2.8530300012789667,
+      "p50": 1.8692999728955328,
+      "p95": 7.571309997001663,
+      "p99": 7.821222014026716,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "component": "workflow.supervisor.recommend"
+      }
+    },
+    "tool_calls_total": {
+      "counter": 20.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "tool": "inventory_stock_lookup",
+        "status": "success"
+      }
+    },
+    "workflow_agent_results_total": {
+      "counter": 8.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "agent": "inventory",
+        "status": "success"
+      }
+    },
+    "workflow_total_latency_ms": {
+      "counter": 0.0,
+      "gauge": 0.0,
+      "count": 2,
+      "avg": 7.448499993188307,
+      "p50": 7.448499993188307,
+      "p95": 7.759269975940697,
+      "p99": 7.786893974407576,
+      "labels": {
+        "workflow": "supervisor_recommendation",
+        "scene": "homepage",
+        "experiment_group": "treatment_llm"
+      }
+    },
+    "business_events_total": {
+      "counter": 9.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "event_type": "purchase",
+        "scene": "homepage",
+        "experiment_group": "treatment_llm"
+      }
+    },
+    "feedback_events_total": {
+      "counter": 9.0,
+      "gauge": 0.0,
+      "count": 0,
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "labels": {
+        "event_type": "purchase",
+        "status": "recorded"
+      }
+    }
+  }
+}

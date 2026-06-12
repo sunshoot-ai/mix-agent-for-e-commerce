@@ -1,0 +1,130 @@
+{
+  "suite_name": "ctr_simulation",
+  "case_name": "public_ctr_simulation",
+  "passed": true,
+  "metrics": [
+    {
+      "name": "simulation_rounds",
+      "value": 20000.0,
+      "passed": true,
+      "threshold": 20000,
+      "details": {}
+    },
+    {
+      "name": "baseline_ctr",
+      "value": 0.09015,
+      "passed": true,
+      "threshold": null,
+      "details": {}
+    },
+    {
+      "name": "thompson_ctr",
+      "value": 0.10055,
+      "passed": true,
+      "threshold": null,
+      "details": {}
+    },
+    {
+      "name": "relative_uplift_percent",
+      "value": 11.536328341652808,
+      "passed": true,
+      "threshold": 0.0,
+      "details": {}
+    },
+    {
+      "name": "ctr_diff_ci_low",
+      "value": 0.004644426126440568,
+      "passed": true,
+      "threshold": null,
+      "details": {}
+    },
+    {
+      "name": "seed_count",
+      "value": 20.0,
+      "passed": true,
+      "threshold": 2.0,
+      "details": {}
+    },
+    {
+      "name": "mean_relative_uplift_percent",
+      "value": 12.476396283709244,
+      "passed": true,
+      "threshold": 0.0,
+      "details": {}
+    }
+  ],
+  "failures": [],
+  "metadata": {
+    "posterior": {
+      "high_intent": {
+        "control": {
+          "successes": 72,
+          "failures": 733,
+          "posterior_mean": 0.08944099378881988
+        },
+        "treatment_llm": {
+          "successes": 1585,
+          "failures": 11654,
+          "posterior_mean": 0.11972203338620742
+        }
+      },
+      "light_user": {
+        "control": {
+          "successes": 37,
+          "failures": 761,
+          "posterior_mean": 0.046365914786967416
+        },
+        "treatment_llm": {
+          "successes": 321,
+          "failures": 4845,
+          "posterior_mean": 0.062137049941927994
+        }
+      }
+    },
+    "source": "public_dataset",
+    "multi_seed": {
+      "mean_relative_uplift_percent": 12.476396283709244,
+      "std_relative_uplift_percent": 3.526524894386225,
+      "relative_uplift_percent_95ci": [
+        10.930828603623443,
+        14.021963963795045
+      ]
+    },
+    "segments": {
+      "high_intent": {
+        "baseline": {
+          "impressions": 14040,
+          "clicks": 1486,
+          "ctr": 0.10584045584045584
+        },
+        "thompson": {
+          "impressions": 14040,
+          "clicks": 1655,
+          "ctr": 0.11787749287749288
+        },
+        "uplift": {
+          "absolute": 0.01203703703703704,
+          "relative": 0.11372812920592197,
+          "relative_percent": 11.372812920592198
+        }
+      },
+      "light_user": {
+        "baseline": {
+          "impressions": 5960,
+          "clicks": 317,
+          "ctr": 0.05318791946308725
+        },
+        "thompson": {
+          "impressions": 5960,
+          "clicks": 356,
+          "ctr": 0.059731543624161075
+        },
+        "uplift": {
+          "absolute": 0.006543624161073826,
+          "relative": 0.12302839116719243,
+          "relative_percent": 12.302839116719243
+        }
+      }
+    }
+  }
+}
